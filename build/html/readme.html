@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Re9 - Reboot &#8212; Re9 0.1.0 documentation</title>
+    <link rel="stylesheet" href="_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Re9_reboot Module" href="code.html" />
+    <link rel="prev" title="Welcome to Re9’s documentation!" href="index.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="code.html" title="Re9_reboot Module"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to Re9’s documentation!"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Re9 0.1.0 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Re9 - Reboot</a><ul>
+<li><a class="reference internal" href="#package-management-tool">Package Management Tool</a></li>
+<li><a class="reference internal" href="#python-version">Python Version</a><ul>
+<li><a class="reference internal" href="#os">OS</a></li>
+<li><a class="reference internal" href="#using-postgresql">Using PostgreSQL</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#environment-variables">Environment Variables</a></li>
+<li><a class="reference internal" href="#fipe-rest-api">FIPE REST API</a><ul>
+<li><a class="reference internal" href="#main-web-page">Main Web Page</a></li>
+<li><a class="reference internal" href="#marcas">Marcas</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tests">Tests</a></li>
+<li><a class="reference internal" href="#notes">Notes</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Welcome to Re9’s documentation!</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="code.html"
+                        title="next chapter">Re9_reboot Module</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/readme.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="re9-reboot">
+<h1>Re9 - Reboot<a class="headerlink" href="#re9-reboot" title="Permalink to this headline">¶</a></h1>
+<p>A reboot of the Re9 project</p>
+<div class="section" id="package-management-tool">
+<h2>Package Management Tool<a class="headerlink" href="#package-management-tool" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">poetry</span> <span class="pre">1.0.5</span></code></p>
+</div>
+<div class="section" id="python-version">
+<h2>Python Version<a class="headerlink" href="#python-version" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">3.8.2</span></code></p>
+<div class="section" id="os">
+<h3>OS<a class="headerlink" href="#os" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>MX Linux</p></li>
+<li><p>Linux 4.19.0-6-amd64 #1 SMP Debian 4.19.67-2+deb10u2 (2019-11-11) x86_64 GNU/Linux</p></li>
+</ul>
+</div>
+<div class="section" id="using-postgresql">
+<h3>Using PostgreSQL<a class="headerlink" href="#using-postgresql" title="Permalink to this headline">¶</a></h3>
+<p>The Python module used for this application is</p>
+<p><code class="docutils literal notranslate"><span class="pre">psycopg2</span></code></p>
+<p>The hard dependency for installing this module is</p>
+<p><code class="docutils literal notranslate"><span class="pre">libpq-dev</span></code></p>
+<p>installable using command</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt install libpq-dev
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="environment-variables">
+<h2>Environment Variables<a class="headerlink" href="#environment-variables" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">DATABASE</span> <span class="o">=</span> <span class="s1">&#39;RE9_DATABASE&#39;</span>
+<span class="n">USER</span> <span class="o">=</span> <span class="s1">&#39;RE9_USER&#39;</span>
+<span class="n">SERVER</span> <span class="o">=</span> <span class="s1">&#39;RE9_SERVER&#39;</span>
+<span class="n">PASSWORD</span> <span class="o">=</span> <span class="s1">&#39;RE9_PWD&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="fipe-rest-api">
+<h2>FIPE REST API<a class="headerlink" href="#fipe-rest-api" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="main-web-page">
+<h3>Main Web Page<a class="headerlink" href="#main-web-page" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="http://fipeapi.appspot.com/">FIPE API</a></p>
+</div>
+<div class="section" id="marcas">
+<h3>Marcas<a class="headerlink" href="#marcas" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="http://fipeapi.appspot.com/api/1/carros/marcas.json">http://fipeapi.appspot.com/api/1/carros/marcas.json</a></p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="tests">
+<h2>Tests<a class="headerlink" href="#tests" title="Permalink to this headline">¶</a></h2>
+<p>The tests are being run with</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">RE9_PWD</span><span class="o">=</span><span class="sb">`</span>cat .config<span class="sb">`</span> pytest
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">.config</span></code> is a protected local file with the required password.</p>
+</div>
+<div class="section" id="notes">
+<h2>Notes<a class="headerlink" href="#notes" title="Permalink to this headline">¶</a></h2>
+<p><cite>database/username/password hint: re9/re9/n-sword</cite></p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="code.html" title="Re9_reboot Module"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to Re9’s documentation!"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Re9 0.1.0 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, Gustavo Garcia.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.4.4.
+    </div>
+  </body>
+</html>
