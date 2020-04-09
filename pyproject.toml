@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "re9-docs"
+version = "0.1.0"
+description = "Documentation for the Re9 Reboot Project, with Sphinx"
+authors = ["guscastles <guscastles@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+sphinx = "^3.0.0"
+psycopg2 = "^2.8.5"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

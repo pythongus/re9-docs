@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>Re9_reboot Module &#8212; re9-reboot 1.0.0 documentation</title>
+    <title>Re9_reboot Module &#8212; Re9 Reboot 0.1.0 documentation</title>
     <link rel="stylesheet" href="_static/sphinxdoc.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -28,7 +28,7 @@
         <li class="right" >
           <a href="readme.html" title="Re9 - Reboot"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">re9-reboot 1.0.0 documentation</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">Re9 Reboot 0.1.0 documentation</a> &#187;</li> 
       </ul>
     </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
@@ -64,45 +64,53 @@
   <div class="section" id="module-re9_reboot.dba">
 <span id="re9-reboot-module"></span><h1>Re9_reboot Module<a class="headerlink" href="#module-re9_reboot.dba" title="Permalink to this headline">¶</a></h1>
 <p>Database Access Module</p>
-<dl class="function">
+<dl class="py function">
 <dt id="re9_reboot.dba.connect_to_db">
-<code class="sig-prename descclassname">re9_reboot.dba.</code><code class="sig-name descname">connect_to_db</code><span class="sig-paren">(</span><em class="sig-param">credentials: tuple</em>, <em class="sig-param">query: str</em>, <em class="sig-param">params: tuple = None</em><span class="sig-paren">)</span><a class="headerlink" href="#re9_reboot.dba.connect_to_db" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">re9_reboot.dba.</code><code class="sig-name descname">connect_to_db</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">credentials</span><span class="p">:</span> <span class="n">tuple</span></em>, <em class="sig-param"><span class="n">query</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">params</span><span class="p">:</span> <span class="n">tuple</span> <span class="o">=</span> <span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#re9_reboot.dba.connect_to_db" title="Permalink to this definition">¶</a></dt>
 <dd><p>Connects to the database with the given
 credentials (server, database, user, password)</p>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="re9_reboot.dba.cursor_for_query">
-<code class="sig-prename descclassname">re9_reboot.dba.</code><code class="sig-name descname">cursor_for_query</code><span class="sig-paren">(</span><em class="sig-param">connection: Any</em>, <em class="sig-param">query: str</em>, <em class="sig-param">params: tuple</em><span class="sig-paren">)</span><a class="headerlink" href="#re9_reboot.dba.cursor_for_query" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">re9_reboot.dba.</code><code class="sig-name descname">cursor_for_query</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">connection</span><span class="p">:</span> <span class="n">Any</span></em>, <em class="sig-param"><span class="n">query</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">params</span><span class="p">:</span> <span class="n">tuple</span> <span class="o">=</span> <span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#re9_reboot.dba.cursor_for_query" title="Permalink to this definition">¶</a></dt>
 <dd><p>Receives a connection object and a query string,
 returns the cursor for the records if successful,
 otherwise returns None.</p>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="re9_reboot.dba.db_credentials">
 <code class="sig-prename descclassname">re9_reboot.dba.</code><code class="sig-name descname">db_credentials</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#re9_reboot.dba.db_credentials" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the database credentials stores in
 environment variables</p>
 </dd></dl>
 
-<dl class="function">
+<dl class="py function">
 <dt id="re9_reboot.dba.fields_as_string">
-<code class="sig-prename descclassname">re9_reboot.dba.</code><code class="sig-name descname">fields_as_string</code><span class="sig-paren">(</span><em class="sig-param">fields: list</em><span class="sig-paren">)</span><a class="headerlink" href="#re9_reboot.dba.fields_as_string" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">re9_reboot.dba.</code><code class="sig-name descname">fields_as_string</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">fields</span><span class="p">:</span> <span class="n">list</span></em><span class="sig-paren">)</span><a class="headerlink" href="#re9_reboot.dba.fields_as_string" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the string representation of the given list of fields</p>
 </dd></dl>
 
 <span class="target" id="module-re9_reboot.restful"></span><p>RESTFul API Functions</p>
 <p>Fetches JSON data from FIPE’s API.</p>
-<dl class="function">
+<dl class="py function">
 <dt id="re9_reboot.restful.fetch_marcas">
-<code class="sig-prename descclassname">re9_reboot.restful.</code><code class="sig-name descname">fetch_marcas</code><span class="sig-paren">(</span><em class="sig-param">uri: str = 'http://fipeapi.appspot.com/api/1/carros/marcas.json'</em><span class="sig-paren">)</span><a class="headerlink" href="#re9_reboot.restful.fetch_marcas" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">re9_reboot.restful.</code><code class="sig-name descname">fetch_marcas</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">uri</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">'http://fipeapi.appspot.com/api/1/carros/marcas.json'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#re9_reboot.restful.fetch_marcas" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fetches all marcas from FIPE’s RESTFul service.</p>
 </dd></dl>
 
 <span class="target" id="module-re9_reboot.data_manager"></span><p>Data Manager for Re9</p>
 <p>Fetches the data from the FIPE API and persists onto the
 PostgreSQL database.</p>
+<dl class="py function">
+<dt id="re9_reboot.data_manager.insert_marcas">
+<code class="sig-prename descclassname">re9_reboot.data_manager.</code><code class="sig-name descname">insert_marcas</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">records</span><span class="p">:</span> <span class="n">list</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">fetch_func</span><span class="p">:</span> <span class="n">Optional<span class="p">[</span>Callable<span class="p">]</span></span> <span class="o">=</span> <span class="default_value">None</span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#re9_reboot.data_manager.insert_marcas" title="Permalink to this definition">¶</a></dt>
+<dd><p>Inserts either the given marcas records or the data fetched from
+the function (fetch_func). If none is given, an empty string is returned,
+otherwise return the response from the insertion process.</p>
+</dd></dl>
+
 </div>
 
 
@@ -123,12 +131,12 @@ PostgreSQL database.</p>
         <li class="right" >
           <a href="readme.html" title="Re9 - Reboot"
              >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">re9-reboot 1.0.0 documentation</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">Re9 Reboot 0.1.0 documentation</a> &#187;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2020, Gustavo Garcia.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.4.4.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 3.0.0.
     </div>
   </body>
 </html>
