@@ -64,16 +64,39 @@
   <div class="section" id="module-re9_reboot.dba">
 <span id="re9-reboot-module"></span><h1>Re9_reboot Module<a class="headerlink" href="#module-re9_reboot.dba" title="Permalink to this headline">¶</a></h1>
 <p>Database Access Module</p>
+<dl class="py class">
+<dt id="re9_reboot.dba.Result">
+<em class="property">class </em><code class="sig-prename descclassname">re9_reboot.dba.</code><code class="sig-name descname">Result</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">code</span></em>, <em class="sig-param"><span class="n">message</span></em>, <em class="sig-param"><span class="n">value</span></em><span class="sig-paren">)</span><a class="headerlink" href="#re9_reboot.dba.Result" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py attribute">
+<dt id="re9_reboot.dba.Result.code">
+<code class="sig-name descname">code</code><a class="headerlink" href="#re9_reboot.dba.Result.code" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 0</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="re9_reboot.dba.Result.message">
+<code class="sig-name descname">message</code><a class="headerlink" href="#re9_reboot.dba.Result.message" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 1</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="re9_reboot.dba.Result.value">
+<code class="sig-name descname">value</code><a class="headerlink" href="#re9_reboot.dba.Result.value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 2</p>
+</dd></dl>
+
+</dd></dl>
+
 <dl class="py function">
 <dt id="re9_reboot.dba.connect_to_db">
-<code class="sig-prename descclassname">re9_reboot.dba.</code><code class="sig-name descname">connect_to_db</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">credentials</span><span class="p">:</span> <span class="n">tuple</span></em>, <em class="sig-param"><span class="n">query</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">params</span><span class="p">:</span> <span class="n">tuple</span> <span class="o">=</span> <span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#re9_reboot.dba.connect_to_db" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">re9_reboot.dba.</code><code class="sig-name descname">connect_to_db</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">credentials</span><span class="p">:</span> <span class="n">tuple</span></em>, <em class="sig-param"><span class="n">query</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">params</span><span class="p">:</span> <span class="n">tuple</span> <span class="o">=</span> <span class="default_value">None</span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#re9_reboot.dba.Result" title="re9_reboot.dba.Result">re9_reboot.dba.Result</a><a class="headerlink" href="#re9_reboot.dba.connect_to_db" title="Permalink to this definition">¶</a></dt>
 <dd><p>Connects to the database with the given
 credentials (server, database, user, password)</p>
 </dd></dl>
 
 <dl class="py function">
 <dt id="re9_reboot.dba.cursor_for_query">
-<code class="sig-prename descclassname">re9_reboot.dba.</code><code class="sig-name descname">cursor_for_query</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">connection</span><span class="p">:</span> <span class="n">Any</span></em>, <em class="sig-param"><span class="n">query</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">params</span><span class="p">:</span> <span class="n">tuple</span> <span class="o">=</span> <span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#re9_reboot.dba.cursor_for_query" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">re9_reboot.dba.</code><code class="sig-name descname">cursor_for_query</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">connection</span><span class="p">:</span> <span class="n">Any</span></em>, <em class="sig-param"><span class="n">query</span><span class="p">:</span> <span class="n">str</span></em>, <em class="sig-param"><span class="n">params</span><span class="p">:</span> <span class="n">tuple</span> <span class="o">=</span> <span class="default_value">None</span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#re9_reboot.dba.Result" title="re9_reboot.dba.Result">re9_reboot.dba.Result</a><a class="headerlink" href="#re9_reboot.dba.cursor_for_query" title="Permalink to this definition">¶</a></dt>
 <dd><p>Receives a connection object and a query string,
 returns the cursor for the records if successful,
 otherwise returns None.</p>
@@ -95,17 +118,101 @@ environment variables</p>
 <span class="target" id="module-re9_reboot.restful"></span><p>RESTFul API Functions</p>
 <p>Fetches JSON data from FIPE’s API.</p>
 <dl class="py function">
+<dt id="re9_reboot.restful.fetch_carros">
+<code class="sig-prename descclassname">re9_reboot.restful.</code><code class="sig-name descname">fetch_carros</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">uri</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="headerlink" href="#re9_reboot.restful.fetch_carros" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fetches all marcas from FIPE’s RESTFul service.</p>
+</dd></dl>
+
+<dl class="py function">
 <dt id="re9_reboot.restful.fetch_marcas">
 <code class="sig-prename descclassname">re9_reboot.restful.</code><code class="sig-name descname">fetch_marcas</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">uri</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">'http://fipeapi.appspot.com/api/1/carros/marcas.json'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#re9_reboot.restful.fetch_marcas" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fetches all marcas from FIPE’s RESTFul service.</p>
 </dd></dl>
 
+<dl class="py function">
+<dt id="re9_reboot.restful.fetch_records">
+<code class="sig-prename descclassname">re9_reboot.restful.</code><code class="sig-name descname">fetch_records</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">uri</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; Optional<span class="p">[</span>list<span class="p">]</span><a class="headerlink" href="#re9_reboot.restful.fetch_records" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fetches records from the given URI.
+Returns a list of dictionaries or None.</p>
+</dd></dl>
+
 <span class="target" id="module-re9_reboot.data_manager"></span><p>Data Manager for Re9</p>
 <p>Fetches the data from the FIPE API and persists onto the
 PostgreSQL database.</p>
+<dl class="py class">
+<dt id="re9_reboot.data_manager.Detail">
+<em class="property">class </em><code class="sig-prename descclassname">re9_reboot.data_manager.</code><code class="sig-name descname">Detail</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">carro</span></em>, <em class="sig-param"><span class="n">detail</span></em><span class="sig-paren">)</span><a class="headerlink" href="#re9_reboot.data_manager.Detail" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="py attribute">
+<dt id="re9_reboot.data_manager.Detail.carro">
+<code class="sig-name descname">carro</code><a class="headerlink" href="#re9_reboot.data_manager.Detail.carro" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 0</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="re9_reboot.data_manager.Detail.detail">
+<code class="sig-name descname">detail</code><a class="headerlink" href="#re9_reboot.data_manager.Detail.detail" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 1</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="re9_reboot.data_manager.carro_values">
+<code class="sig-prename descclassname">re9_reboot.data_manager.</code><code class="sig-name descname">carro_values</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">marca_id</span><span class="p">:</span> <span class="n">int</span></em>, <em class="sig-param"><span class="n">carro</span><span class="p">:</span> <span class="n">dict</span></em><span class="sig-paren">)</span><a class="headerlink" href="#re9_reboot.data_manager.carro_values" title="Permalink to this definition">¶</a></dt>
+<dd><p>Receives an id of marca, a carro and returns
+the tuple with relevant fields and values.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="re9_reboot.data_manager.fetch_carros_ids">
+<code class="sig-prename descclassname">re9_reboot.data_manager.</code><code class="sig-name descname">fetch_carros_ids</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">marca_id</span><span class="p">:</span> <span class="n">tuple</span></em><span class="sig-paren">)</span> &#x2192; list<a class="headerlink" href="#re9_reboot.data_manager.fetch_carros_ids" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fetches all carros IDs for the given marca ID.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="re9_reboot.data_manager.fetch_marcas_ids">
+<code class="sig-prename descclassname">re9_reboot.data_manager.</code><code class="sig-name descname">fetch_marcas_ids</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">query</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">'select id from marcas'</span></em><span class="sig-paren">)</span> &#x2192; List<a class="headerlink" href="#re9_reboot.data_manager.fetch_marcas_ids" title="Permalink to this definition">¶</a></dt>
+<dd><p>Receives a query for marcas, with default value set to
+ALL_MARCAS_IDS and returns the list of ids.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="re9_reboot.data_manager.insert_carro_details">
+<code class="sig-prename descclassname">re9_reboot.data_manager.</code><code class="sig-name descname">insert_carro_details</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#re9_reboot.data_manager.insert_carro_details" title="Permalink to this definition">¶</a></dt>
+<dd><p>Inserts the year details into the database, for each marca ID.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="re9_reboot.data_manager.insert_carros">
+<code class="sig-prename descclassname">re9_reboot.data_manager.</code><code class="sig-name descname">insert_carros</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">query</span><span class="p">:</span> <span class="n">str</span> <span class="o">=</span> <span class="default_value">'select id from marcas'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#re9_reboot.data_manager.insert_carros" title="Permalink to this definition">¶</a></dt>
+<dd><p>Inserts the records of carros for all marcas.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="re9_reboot.data_manager.insert_details_into_db">
+<code class="sig-prename descclassname">re9_reboot.data_manager.</code><code class="sig-name descname">insert_details_into_db</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">file_name</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; bool<a class="headerlink" href="#re9_reboot.data_manager.insert_details_into_db" title="Permalink to this definition">¶</a></dt>
+<dd><p>Inserts the carro details from the given pickle file
+into the database.</p>
+<p>Example data:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Detail</span><span class="p">(</span><span class="n">carro</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;marca_id&#39;</span><span class="p">:</span> <span class="mi">59</span><span class="p">,</span>
+              <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;AMAROK CD2.0 16V/S CD2.0 16V TDI 4x2 Die&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;key&#39;</span><span class="p">:</span> <span class="s1">&#39;amarok-5585&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;id&#39;</span><span class="p">:</span> <span class="mi">5585</span><span class="p">,</span>
+              <span class="s1">&#39;fipe_name&#39;</span><span class="p">:</span> <span class="s1">&#39;AMAROK CD2.0 16V/S CD2.0 16V TDI 4x2 Die&#39;</span><span class="p">},</span>
+       <span class="n">detail</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;fipe_marca&#39;</span><span class="p">:</span> <span class="s1">&#39;VW - VolksWagen&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;fipe_codigo&#39;</span><span class="p">:</span> <span class="s1">&#39;2013-3&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="s1">&#39;2013 Diesel&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;marca&#39;</span><span class="p">:</span> <span class="s1">&#39;VOLKSWAGEN&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;key&#39;</span><span class="p">:</span> <span class="s1">&#39;2013-3&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;veiculo&#39;</span><span class="p">:</span> <span class="s1">&#39;AMAROK CD2.0 16V/S CD2.0 16V TDI 4x2 Die&#39;</span><span class="p">,</span>
+               <span class="s1">&#39;id&#39;</span><span class="p">:</span> <span class="s1">&#39;2013-3&#39;</span><span class="p">})</span>
+</pre></div>
+</div>
+</dd></dl>
+
 <dl class="py function">
 <dt id="re9_reboot.data_manager.insert_marcas">
-<code class="sig-prename descclassname">re9_reboot.data_manager.</code><code class="sig-name descname">insert_marcas</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">records</span><span class="p">:</span> <span class="n">list</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">fetch_func</span><span class="p">:</span> <span class="n">Optional<span class="p">[</span>Callable<span class="p">]</span></span> <span class="o">=</span> <span class="default_value">None</span></em><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#re9_reboot.data_manager.insert_marcas" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">re9_reboot.data_manager.</code><code class="sig-name descname">insert_marcas</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">records</span><span class="p">:</span> <span class="n">list</span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">fetch_func</span><span class="p">:</span> <span class="n">Optional<span class="p">[</span>Callable<span class="p">]</span></span> <span class="o">=</span> <span class="default_value">None</span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#re9_reboot.dba.Result" title="re9_reboot.dba.Result">re9_reboot.dba.Result</a><a class="headerlink" href="#re9_reboot.data_manager.insert_marcas" title="Permalink to this definition">¶</a></dt>
 <dd><p>Inserts either the given marcas records or the data fetched from
 the function (fetch_func). If none is given, an empty string is returned,
 otherwise return the response from the insertion process.</p>
